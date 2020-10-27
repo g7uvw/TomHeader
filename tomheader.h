@@ -4,7 +4,7 @@
 struct thead
 {
     uint16_t xsize,ysize,zsize,lmarg,rmarg,tmarg,bmarg,tzmarg,bzmarg,\
-    num_samples,num_proj,num_blocks,num_slices,bin,gain,speed,pepper,issue,num_frames,spare_int[13]__attribute__((packed));
+    num_samples,num_proj,num_blocks,num_slices,bin,gain,speed,pepper,calibrationissue,num_frames,machine,spare_int[12]__attribute__((packed));
     float scale,offset,voltage,current,thickness,pixel_size,distance,exposure,\
     mag_factor,filterb,correction_factor,spare_float[2]__attribute__((packed));
     uint32_t z_shift,z,theta __attribute__((packed));
